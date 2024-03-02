@@ -22,13 +22,13 @@ header {
     border-bottom: 1px solid $gray_color;
     background-color: #fff;
     &-brand {
-      width: 50px;
-      min-height: 50px;
+      width: 100px;
+      min-height: 100px;
     }
 
     .nav-link {
       color: $black-color;
-      font-size: 20px;
+      font-size: 25px;
       margin-right: 20px;
       transition: all 0.5s ease;
       &:hover {
@@ -42,7 +42,7 @@ header {
     position: relative;
     margin-left: 200px;
     .fa-circle-user {
-      font-size: 35px;
+      font-size: 45px;
       margin-left: 15px;
       color: $gray_color;
       cursor: pointer;
@@ -95,12 +95,27 @@ header {
   .carousel {
     .carousel-item {
       img {
-        height: 650px;
+        height: 900px;
+        width: auto;
       }
-
+      .carousel-content {
+        a {
+          @include button($main-color, $white-color, $main-color);
+          padding: 17px 47px;
+          border-radius: 30px;
+        }
+        h2 {
+          margin-bottom: 50px !important;
+          color: $white-color;
+        }
+        h1 {
+          color: $main-color;
+          margin-bottom: 25px;
+        }
+      }
       .overlay {
         position: absolute;
-        background-color: rgba($color: $main-color, $alpha: 0.5);
+        background-color: rgba($color: $white-color, $alpha: 0.2);
         top: 0;
         right: 0;
         height: 100%;
@@ -114,6 +129,51 @@ header {
     }
   }
 }
+
+.about-the-school {
+  position: relative;
+
+  // &::before {
+
+  //   content: "" ;
+  //   position: absolute ;
+  //   width: 15px ;
+  //   height: 100% ;
+  //   top: 0;
+  //   right: -30px;
+  //   background-color: $main-color
+  //     }
+  .text {
+    color: $main-color;
+    text-align: center;
+  }
+  .description {
+    h3 {
+      margin-top: 30px;
+      color: $main-color-second;
+      text-align: center;
+      font-size: 40px;
+    }
+
+    q {
+      font-size: 30px;
+      text-align: center;
+      color: $gray_color;
+    }
+  }
+}
+
+@media (max-width: 1650px) {
+  .carousel-content {
+    h2 {
+      font-size: 1.5rem;
+    }
+    h1 {
+      font-size: 1.9rem;
+    }
+  }
+}
+
 @media (max-width: 992px) {
   .login {
     display: none;
@@ -123,6 +183,15 @@ header {
       .button {
         display: block;
       }
+    }
+  }
+
+  .carousel-content {
+    h2 {
+      font-size: 1rem;
+    }
+    h1 {
+      font-size: 1rem;
     }
   }
 }
