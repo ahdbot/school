@@ -1,0 +1,37 @@
+{
+  "name": "school",
+  "version": "1.0.0",
+  "description": "school template using webpack and boostrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production",
+    "server": "webpack server --mode development"
+  },
+  "keywords": [
+    "webpack",
+    "boostrap",
+    "school"
+  ],
+  "author": "ahmad",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.1",
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3",
+    "save-dev": "^0.0.1-security",
+    "webpack": "^5.75.0"
+  },
+  "devDependencies": {
+    "css-loader": "^6.9.1",
+    "css-minimizer-webpack-plugin": "^6.0.0",
+    "html-loader": "^5.0.0",
+    "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.7.7",
+    "rtlcss-loader": "^1.0.3",
+    "sass": "^1.70.0",
+    "sass-loader": "^14.0.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
