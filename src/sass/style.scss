@@ -96,7 +96,6 @@ header {
     .carousel-item {
       img {
         height: 900px;
-        width: auto;
       }
       .carousel-content {
         a {
@@ -132,6 +131,7 @@ header {
 
 .about-the-school {
   position: relative;
+  width: 100%;
 
   // &::before {
 
@@ -148,18 +148,17 @@ header {
     text-align: center;
   }
   .description {
-    h3 {
-      margin-top: 30px;
-      color: $main-color-second;
-      text-align: center;
-      font-size: 40px;
-    }
-
     q {
       font-size: 30px;
       text-align: center;
       color: $gray_color;
     }
+  }
+}
+
+.works {
+  h2 {
+    text-align: center;
   }
 }
 
@@ -193,5 +192,28 @@ header {
     h1 {
       font-size: 1rem;
     }
+  }
+}
+
+.section-title {
+  color: $main-color;
+  text-align: center;
+  font-size: 40px;
+}
+
+.works {
+  padding: 100px 0px;
+  img {
+    width: 100px;
+    height: 100px;
+  }
+  h4 {
+    font-size: 45px;
+    color: $black-color;
+    margin: 50px;
+  }
+  p {
+    color: $gray_color;
+    font-size: 24px;
   }
 }
