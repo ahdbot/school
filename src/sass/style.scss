@@ -2,114 +2,102 @@
 @import "./variables";
 @import "./mixins.scss";
 @font-face {
-    font-family: 'Almarai';
-    src: url(../fonts/Almarai-Regular.ttf);
-
+  font-family: "Almarai";
+  src: url(../fonts/Almarai-Regular.ttf);
 }
 
-
 body {
-    font-family: "Almarai", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  * {
-    padding: 0;
-    margin: 0;
-  }
+  font-family: "Almarai", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
 
 header {
-    .navbar {
+  .navbar {
     padding: 10px;
     border-bottom: 1px solid $gray_color;
     background-color: #fff;
     &-brand {
-        width: 50px;
-        min-height: 50px;
-           
-        
-      }
-
-      .nav-link {
-        color: $black-color;
-        font-size: 20px;
-        margin-right: 20px;
-        transition: all 0.5s ease;
-        &:hover {
-          color: $main-color;
-         text-decoration: underline;
-         
-        }
-      
-       
-      }
-    
-   
+      width: 50px;
+      min-height: 50px;
     }
 
-    .login {
-        position: relative;
-        margin-left: 200px;
-        .fa-user {
-          font-size: 30px;
-          margin-left: 15px;
-          color: $gray_color;
-          cursor: pointer;
-        }
-  
-        &-container {
-          position: absolute;
-          width: 250px;
-          height: 80px;
-          background-color: #fff;
-          border: 1px solid $gray_color;
-          text-align: center;
-          padding: 20px;
-          border-radius: 10px;
-          top: 52px;
-          right: -112px;
-          visibility: hidden;
-          transform: all 0.5s ease;
-    
-  
-          .button {
-            @include button($main-color, $white-color, $main-color);
-            visibility: hidden;
-          }
-        }
-  
-        &:hover {
-          .login-container {
-            visibility: visible;
-            .button {
-              visibility: visible;
-            }
-          }
-        }
+    .nav-link {
+      color: $black-color;
+      font-size: 20px;
+      margin-right: 20px;
+      transition: all 0.5s ease;
+      &:hover {
+        color: $main-color;
+        text-decoration: underline;
       }
-      .login-button {
+    }
+  }
+
+  .login {
+    position: relative;
+    margin-left: 200px;
+    .fa-circle-user {
+      font-size: 35px;
+      margin-left: 15px;
+      color: $gray_color;
+      cursor: pointer;
+    }
+
+    &-container {
+      position: absolute;
+      width: 250px;
+      height: 80px;
+      background-color: #fff;
+      border: 1px solid $gray_color;
+      text-align: center;
+      padding: 20px;
+      border-radius: 10px;
+      top: 52px;
+      right: -112px;
+      visibility: hidden;
+      transform: all 0.5s ease;
+
+      .button {
+        @include button($main-color, $white-color, $main-color);
+        visibility: hidden;
+      }
+    }
+
+    &:hover {
+      .login-container {
+        visibility: visible;
         .button {
-          @include button($main-color, $white-color, $main-color);
-          font-size: 16px;
-          width: 50%;
-          margin: 15px auto;
-          text-align: center;
-          display: none;
+          visibility: visible;
         }
       }
+    }
+  }
+  .login-button {
+    .button {
+      @include button($main-color, $white-color, $main-color);
+      font-size: 16px;
+      width: 50%;
+      margin: 15px auto;
+      text-align: center;
+      display: none;
+    }
+  }
 }
 
-
 @media (max-width: 992px) {
-    .login {
-        display: none;
+  .login {
+    display: none;
+  }
+  .navbar {
+    .login-button {
+      .button {
+        display: block;
       }
-      .navbar {
-        .login-button {
-          .button {
-            display: block;
-          }
-        }
-      }
-
+    }
+  }
 }
