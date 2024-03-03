@@ -8,11 +8,11 @@
 
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
 
 
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
           <img src="images/icons.png" alt="" class="navbar-brand">
@@ -25,13 +25,13 @@
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
+              <a class="nav-link active" aria-current="page" href="#carouselabout">الرئيسية</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="#">من نحن</a>
+              <a class="nav-link " aria-current="page" href="#about-the-school">من نحن</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="#">أنشطة وفعاليات</a>
+              <a class="nav-link " aria-current="page" href="#works">أنشطة وفعاليات</a>
             </li>
 
             <li class="nav-item">
@@ -58,7 +58,7 @@
   </header>
 
 
-  <section class="carousel ">
+  <section class="carousel" id="carouselabout">
     <div class="container-fluid">
       <div class="row">
         <div id="carouselExampleCaptions" class="carousel" data-bs-ride="carousel">
@@ -116,28 +116,35 @@
 
           </div>
           <a class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <i class="fa-solid fa-angle-left fa-2x"></i>
+            <i class="fa-solid fa-angle-left fa-3x"></i>
 
           </a>
           <a class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <i class="fa-solid fa-angle-right fa-2x"></i>
+            <i class="fa-solid fa-angle-right fa-3x"></i>
           </a>
         </div>
       </div>
   </section>
 
-  <section class="about-the-school ">
+  <section class="about-the-school" id="about-the-school">
     <div class="container">
 
       <div class="description ">
         <br>
-        <h1 class="section-title">كلمة المشرف العام على المدارس
+        <h1 class="section-title ">كلمة المشرف العام على المدارس
         </h1>
+        <div class="text-center supervisior">
+          <img src="images/ahmadbajaber2.jpeg" class="text-center">
+          <span class="supervisior-name">
+            <p class="mt-4">السيد : أحمد باجابر</p>
+          </span>
+        </div>
+
         <br>
         <q>
           بسم الله الرحمن الرحيم الحمد لله رب العالمين والصلاة والسلام علي اشرف الأنبياء والمرسلين سيدنا محمد وعلي آله
           وأصحابه أجمعين . وبعد ، الحمد لله - بفضله وكرمه - تحظى مدارس علمني الأهلية بسمعة طيبة ومتميزة على مستوى
-          المنطقة الشرقية . واضعين أمامنا هدف رئيسي للمدارس وهو ( تأهيل الطلاب ورفع قدراتهم للالتحاق بأرقى الجامعات
+          المنطقةالعربية واضعين أمامنا هدف رئيسي للمدارس وهو ( تأهيل الطلاب ورفع قدراتهم للالتحاق بأرقى الجامعات
           العلمية والطبية ) . أنتهز الفرصة لأتقدم بالشكر الجزيل لجميع منسوبي مدارس علمني الأهلية
 
         </q>
@@ -149,10 +156,10 @@
   </section>
 
 
-  <section class="works">
+  <section class="works" id="works">
     <hr>
     <div class="container">
-      <h2 class="section-title mb-5">نشاطاتنا </h2>
+      <h2 class="section-title m-5 ">نشاطاتنا </h2>
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12">
           <div class="d-flex">
@@ -198,11 +205,66 @@
             </div>
             <div class="flex-grow-1 ms-3">
               <h4>الأنشطة الرياضية </h4>
-            <p>الأنشطة الطلابية تلعب دوراً بارزاً وفعالاً في بناء شخصية الفرد من خلال تنمية قدراته ومواهبه الرياضية بالإضافة إلى تعديل وتغيير سلوكه بما يتناسب مع احتياجات المجتمع.</p>
+              <p>الأنشطة الطلابية تلعب دوراً بارزاً وفعالاً في بناء شخصية الفرد من خلال تنمية قدراته ومواهبه الرياضية
+                بالإضافة إلى تعديل وتغيير سلوكه بما يتناسب مع احتياجات المجتمع.</p>
 
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="students" id="students">
+    <hr>
+    <div class="container">
+      <h2 class="section-title m-5 ">التلاميذ </h2>
+      <div id="said-about-company-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="justify-content-center row">
+              <div class="col-8">
+                <div class="text-center">
+                  <img src="images/students/1.jpg" class="custom-img" alt="محمد هاني">
+                  <h4 class="student-name">أحمد محمد</h4>
+                  <h5 class=""> تاريخ الميلاد : 1995/10/10 </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="justify-content-center row">
+              <div class="col-8">
+                <div class="text-center">
+                  <img src="images/students/2.jpg" class="custom-img" alt="محمد هاني">
+                  <h4 class="student-name">أحمد محمد</h4>
+                  <h5 class=""> تاريخ الميلاد : 1995/10/10 </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="justify-content-center row">
+              <div class="col-8">
+                <div class="text-center">
+                  <img src="images/students/3.jpg" class="custom-img" alt="محمد هاني">
+                  <h4 class="student-name">أحمد محمد</h4>
+                  <h5 class=""> تاريخ الميلاد : 1995/10/10 </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <a class="carousel-control-prev" type="button" data-bs-target="#said-about-company-carousel"
+          data-bs-slide="prev">
+          <i class="fa-solid fa-angle-right fa-2x"></i>
+        </a>
+        <a class="carousel-control-next" type="button" data-bs-target="#said-about-company-carousel"
+          data-bs-slide="next">
+          <i class="fa-solid fa-angle-left fa-2x"></i>
+        </a>
       </div>
     </div>
   </section>
