@@ -150,7 +150,7 @@ header {
   .description {
     .supervisior {
       .supervisior-name {
-        color: red;
+        color: $main-color;
         margin-top: 100px;
       }
     }
@@ -173,16 +173,11 @@ header {
 }
 
 .students {
-  .carousel-control-prev {
-    font-size: 25px;
-    color: $black-color !important;
+  background-color: $main-color-second;
+  height: 500px;
+  h2 {
+    color: $white-color;
   }
-
-  .carousel-control-next {
-    font-size: 25px;
-    color: $black-color !important;
-  }
-
   .carousel-inner {
     .custom-img {
       width: 150px;
@@ -193,16 +188,40 @@ header {
     .student-name {
       font-size: 24px;
       margin-top: 15px;
-  
+      color: $black-color;
+      &:hover {
+        color: $main-color;
+      }
     }
 
     .student-date {
-     color: $gray_color !important;
-     time {
-      font-size: 15px;
-     }
-     margin-bottom: 15px;
+      color: $gray_color !important;
+      time {
+        font-size: 15px;
+      }
+      margin-bottom: 15px;
     }
+  }
+
+  .carousel-control-prev {
+    font-size: 25px;
+    color: $black-color !important;
+  }
+
+  .carousel-control-next {
+    font-size: 25px;
+    color: $black-color !important;
+  }
+}
+
+.best-student {
+  .icon-main {
+    img {
+      width: 12rem;
+    }
+  }
+  .card {
+    text-align: center !important;
   }
 }
 @media (max-width: 1670px) {
