@@ -185,13 +185,23 @@ header {
 
   .carousel-inner {
     .custom-img {
-      width: 100px;
-      height: 100px;
+      width: 150px;
+      height: 150px;
+      clip-path: circle();
     }
 
     .student-name {
       font-size: 24px;
       margin-top: 15px;
+  
+    }
+
+    .student-date {
+     color: $gray_color !important;
+     time {
+      font-size: 15px;
+     }
+     margin-bottom: 15px;
     }
   }
 }
