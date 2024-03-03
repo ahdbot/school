@@ -90,6 +90,9 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "css/style.css"
     }),
+    new MiniCssExtractPlugin({
+      filename: "css/student.css"
+    }),
 
   ]
   
