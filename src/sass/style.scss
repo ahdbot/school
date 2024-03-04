@@ -417,6 +417,9 @@ footer {
     display: inline;
     margin: 10px;
     font-size: 30px;
+    a {
+      color: darken($color: $gray_color, $amount: 50%);
+    }
   }
 }
 
