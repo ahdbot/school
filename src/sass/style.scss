@@ -316,6 +316,60 @@ header {
     }
   }
 }
+.social-about {
+  margin-left: 20%;
+  margin-top: 25px;
+}
+.one-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #a9a9a9;
+  color: #a9a9a9;
+  width: 45px;
+  height: 45px;
+  border-radius: 3px;
+  margin-left: 10px;
+  float: left;
+  transition: all 0.5s ease;
+  &:hover {
+    background-color: $hover-card;
+  }
+}
+
+// static section
+
+.statistics {
+  background-image: url(../images/schoolbg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  .overlay {
+    background-color: rgb($color: $main-color, $alpha: 0.9);
+    padding: 140px 0 100px;
+    h2 {
+      color: $white-color;
+      margin-bottom: 50px;
+    }
+    .count {
+      font-size: 40px;
+      font-weight: bold;
+      color: $white-color;
+      margin: 50px auto 30px;
+    }
+
+    .counter {
+      color: $white-color;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    img {
+      width: 200px;
+    }
+  }
+}
 
 @media (max-width: 1600px) {
   .main-breadcrumb {

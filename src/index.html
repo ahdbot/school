@@ -28,10 +28,14 @@
               <a class="nav-link active" aria-current="page" href="#carouselabout">الرئيسية</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="#about-the-school">من نحن</a>
+              <a class="nav-link " aria-current="page" href="#">من نحن</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#">أنشطة وفعاليات</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="#work">أنشطة وفعاليات</a>
+              <a class="nav-link " aria-current="page" href="#"> احصائيات المدرسة </a>
             </li>
 
             <li class="nav-item">
@@ -126,18 +130,31 @@
       </div>
   </section>
 
-  <section class="about-the-school" id="about-the-school">
-    <div class="container">
+  <section class="about-the-school  " id="about-the-school">
+    <div class="container  ">
 
-      <div class="description ">
+      <div class="description   ">
         <br>
         <h1 class="section-title mb-5">كلمة المشرف العام على المدارس
         </h1>
-        <div class="text-center supervisior">
-          <img src="images/ahmadbajaber2.jpeg" class="text-center">
-          <span class="supervisior-name">
-            <p class="mt-4">السيد : أحمد باجابر</p>
-          </span>
+        <div class="col-md-12 col-lg-12 d-flex justify-content-center">
+          <div class="card text-center mb-5" style="width: 15rem;">
+
+            <div class="card-body">
+              <img src="images/ahmadbajaber2.jpeg" alt="personal-img">
+              <h5 class="card-title mt-3"> أحمد باجابر </h5>
+              <h6 class="card-subtitle mb-3 text-muted"> المشرف العام </h6>
+              <hr class="our-team-line mx-auto">
+
+              <div class="social-about">
+
+                <a class="linkedin-social one-social" href="#"><i class="fa-brands fa-linkedin-in fa-lg"></i></a>
+                <a class="twitter-social one-social" href="#"><i class="fa-brands fa-x-twitter fa-lg"></i></a>
+
+              </div>
+            </div>
+
+          </div>
         </div>
 
         <br>
@@ -317,16 +334,16 @@
         </div>
       </div>
 
-      <div class="card border-success mx-auto mt-3" style="width: 23rem;">
+      <div class="card border-dark mx-auto mt-3" style="width: 23rem;">
         <img src="images/students/1.jpg" class="card-img-top " alt="...">
         <div class="card-body">
-          <h5 class="text-center  "> اسم الطالب</h5>
+          <h5 class="text-center"> اسم الطالب</h5>
           <h3 class="text-center student-name"> أحمد محمد </h3>
           <br>
-          <h5 class="text-center "> مرتبة التفوق </h5>
+          <h5 class="text-center"> مرتبة التفوق </h5>
           <h3 class="text-center ranking"> ممتاز </h3>
-          <div class="card-footer bg-transparent border-success">
-            <a href="#" class="btn btn-primary mt-3"> صفحة الطالب </a>
+          <div class="card-footer bg-transparent border-dark">
+            <a href="student.html" class="btn btn-primary mt-3"> صفحة الطالب </a>
           </div>
         </div>
       </div>
@@ -345,14 +362,62 @@
           <h5 class="text-center "> مرتبة التفوق </h5>
           <h3 class="text-center ranking"> ممتاز </h3>
           <div class="card-footer bg-transparent border-dark">
-            <a href="#" class="btn btn-primary mt-3"> صفحة الطالب </a>
+            <a href="student.html" class="btn btn-primary mt-3"> صفحة الطالب </a>
           </div>
 
         </div>
       </div>
 
     </div>
+
   </section>
+
+
+  <section class="statistics" id="statistics">
+
+    <div class="overlay text-center mt-5 ">
+      <h2>احصائيات المدرسة</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-4 col-lg-4">
+            <img src="images/stats/school.png" alt="website">
+            <div class="count" id="website-count">
+          20
+            </div>
+            <span class="counter">
+              مدرسة
+            </span>
+          </div>
+          <div class="col-sm-6 col-md-4  col-lg-4">
+            <img src="images/stats/student.png" alt="app">
+            <div class="count" id="app-count">
+              100
+            </div>
+            <span class="counter">
+              معلم
+            </span>
+          </div>
+          <div class="col-sm-6 col-md-4  col-lg-4">
+            <img src="images/stats/teacher.png" alt="user">
+            <div class="count" id="user-count">
+              1000
+            </div>
+            <span class="counter">
+              طالب
+            </span>
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+  </section>
+
+  <footer>
+
+  </footer>
 </body>
 
 </html>

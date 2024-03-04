@@ -18,3 +18,5 @@ function scrollFnuction()
         document.getElementById('navbar').classList.remove('noTransparrent');
     }
 };
+
+scrollFnuction();
