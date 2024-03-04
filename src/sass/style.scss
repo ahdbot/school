@@ -360,7 +360,7 @@ header {
     }
 
     .counter {
-      color: $white-color;
+      color: $gray_color;
       font-size: 20px;
       font-weight: bold;
     }
@@ -368,6 +368,55 @@ header {
     img {
       width: 200px;
     }
+  }
+}
+
+// conntact section
+
+.register {
+  padding: 50px 0 60px;
+  background-color: $white-color;
+  .text {
+    h4 {
+      font-size: 30px;
+    }
+    h2 {
+      font-size: 60px;
+    }
+  }
+
+  .button-register {
+    a {
+      @include button($main-color, $white-color, $main-color);
+      width: 100px;
+      border-radius: 30px;
+      padding: 30px;
+    }
+  }
+}
+
+// foooter section
+footer {
+  background-color: $main-color;
+  padding: 50px 0;
+
+  h3 {
+    color: $white-color;
+    margin-bottom: 20px;
+  }
+
+  p {
+    color: $gray_color;
+  }
+  ul {
+    li {
+      color: $gray_color;
+    }
+  }
+  .social-media-icon {
+    display: inline;
+    margin: 10px;
+    font-size: 30px;
   }
 }
 
