@@ -80,20 +80,18 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({
-        filename: "index.html",
-        template: "./src/index.html"
+      filename: "index.html",
+      template: "./src/index.html"
     }),
     new HtmlWebpackPlugin({
-        filename: "student.html",
-        template: "./src/student.html"
+      filename: "student.html",
+      template: "./src/student.html"
     }),
     new MiniCssExtractPlugin({
       filename: "css/style.css"
     }),
-    new MiniCssExtractPlugin({
-      filename: "css/student.css"
-    }),
+
 
   ]
-  
+
 };

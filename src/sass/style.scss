@@ -316,6 +316,27 @@ header {
     }
   }
 }
+
+.student-info {
+  border: 3px solid $main-color;
+  padding: 100px;
+  .student-title {
+    text-align: center;
+    h2 {
+      color: $black-color;
+    }
+    h3 {
+      color: red;
+    }
+  }
+}
+
+.tips {
+  background-color: $white-color;
+  padding: 100px;
+  text-align: center;
+}
+/// end
 .social-about {
   margin-left: 20%;
   margin-top: 25px;
