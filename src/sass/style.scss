@@ -446,19 +446,23 @@ footer {
 
 // register form
 
-.register-form {
-  label {
-    text-align: center;
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
+// .register-form {
+//   label {
+//     text-align: center;
+//     font-size: 22px;
+//     margin-bottom: 10px;
+//   }
 
-  .button {
-    @include button($main-color, $white-color, $main-color);
-    font-size: 22px;
-  }
-}
+//   .button {
+//     @include button($main-color, $white-color, $main-color);
+//     font-size: 20px;
+//   }
+
+//   a.ms-3 {
+//     color: $main-color;
+//     font-size: 15px;
+//   }
+// }
 
 @media (max-width: 1600px) {
   .main-breadcrumb {

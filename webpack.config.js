@@ -5,7 +5,7 @@ const path = require('path');
 module.exports = {
   mode: "development",
   entry: {
-    app: "./src/index.js",
+    app: "./src/js/index.js",
   },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -32,34 +32,43 @@ module.exports = {
         },
       },
       {
-        test: /\.(sa|sc|c)ss$/i,
-        exclude: /custom\.scss$/i,
+
+        test: /\.(sass|css|scss)$/,
+
+        use: [
+
+          {
+
+            loader: MiniCssExtractPlugin.loader,
+
+            options: {
+
+              publicPath: '../'
+
+            }
+
+          },
+
+          "css-loader",
+
+          "sass-loader",
+
+        ],
+      },
+      {
+        test: /custom\.scss$/i,
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
-              publicPath: '../',
-              esModule: false,
+              // esModule: false,
+              publicPath: '../'
             },
           },
-          "css-loader",
-          "sass-loader",
+          "rtlcss-loader",
+          "sass-loader"
         ],
       },
-      // {
-      //   test: /custom\.scss$/i,
-      //   use: [
-      //     {
-      //       loader: MiniCssExtractPlugin.loader,
-      //       options: {
-      //         // esModule: false,
-      //         publicPath: '../'
-      //       },
-      //     },
-      //     "rtlcss-loader",
-      //     "sass-loader"
-      //   ],
-      // },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',

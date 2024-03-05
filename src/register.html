@@ -9,7 +9,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light  fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
                     <img src="images/icons.png" alt="" class="navbar-brand">
@@ -25,7 +25,9 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
                         </li>
-      
+
+
+
                         <li class="nav-item">
                             <a class="nav-link " aria-current="page" href="#">تواصل معنا </a>
                         </li>
@@ -37,7 +39,7 @@
                     <div class="login me-auto ">
                         <i class="fa-solid fa-circle-user"></i>
                         <div class="login-container">
-                            <a href="./login.html" class="button"> تسجيل الدخول</a>
+                            <a href="index.html" class="button"> تسجيل الدخول</a>
                         </div>
                     </div>
                     <div class="login-button">
@@ -47,20 +49,6 @@
 
             </div>
         </nav>
-
-        <div class="header-main">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="banner">
-                            <div class="overlay">
-                                <h1 class="title text-center"> صفحة تسجيل الطالب </h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </header>
 
 
@@ -74,15 +62,20 @@
                     <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
                         <form action="login.html">
                             <div class="mb-4">
-                                <label for="text" class="form-label"> اسم المستخدم</label>
+                                <label for="text" class="form-label"> اسم الطالب </label>
                                 <input type="username" id="email" class="form-control form-control-lg" required>
 
+                            </div>
+                            <div class="mb-4">
+                                <label for="startDate">تاريخ الميلاد</label>
+                                <input id="startDate" class="form-control" type="date" />
                             </div>
                             <div class="mb-4">
                                 <label for="email" class="form-label"> البريد الالكتروني</label>
                                 <input type="email" id="email" class="form-control form-control-lg" required>
 
                             </div>
+
                             <div class="mb-4">
                                 <label for="password" class="form-label"> كلمة المرور</label>
                                 <input type="password" id="password" class="form-control form-control-lg" required>
@@ -105,11 +98,12 @@
                             </p>
                         </div>
                         <div class="social-media-login">
+
                             <a href="@" class="btn login-button" role="button">
-                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-square-x-twitter fa-2x"></i>
                             </a>
                             <a href="@" class="btn login-button" role="button">
-                                <i class="fa-solid fa-x"></i>
+                                <i class="fa-brands fa-square-google-plus fa-2x"></i>
                             </a>
                         </div>
                     </div>
