@@ -444,6 +444,22 @@ footer {
   }
 }
 
+// register form
+
+.register-form {
+  label {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .button {
+    @include button($main-color, $white-color, $main-color);
+    font-size: 22px;
+  }
+}
+
 @media (max-width: 1600px) {
   .main-breadcrumb {
     margin-right: 100px;

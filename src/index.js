@@ -51,7 +51,7 @@ if (!countUp1.error) {
 } else {
     countUp1.error(countUp1.error);
 }
-const countUp2 = new CountUp('user-count', 1000);
+const countUp2 = new CountUp('user-count', 700);
 if (!countUp2.error) {
     countUp2.start();
 } else {
