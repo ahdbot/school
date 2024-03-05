@@ -2,3 +2,13 @@
 @import "./mixins.scss";
 
 
+@media (max-width: 1000px) {
+  footer {
+    .studnet-mark {
+      table > td {
+        width: 200px !important;
+        height: 200px !important;
+      }
+    }
+  }
+}

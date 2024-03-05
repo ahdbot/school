@@ -10,6 +10,7 @@ import '../sass/style.scss'
 import '../sass/register.scss'
 
 import '../sass/login.scss'
+import '../sass/student.scss'
 
 // import "jquery/dist/jquery.js";
 
