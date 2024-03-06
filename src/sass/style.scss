@@ -182,7 +182,6 @@ header {
     .custom-img {
       width: 150px;
       height: 150px;
-      clip-path: circle();
     }
 
     .student-name {
@@ -286,56 +285,7 @@ header {
   }
 }
 // student page
-.main-breadcrumb {
-  margin-left: 300px;
-  .breadcrumb {
-    a {
-      text-decoration: none;
-      color: $black-color;
 
-      &:hover {
-        color: $main-color;
-        text-decoration: underline;
-      }
-    }
-  }
-}
-
-header {
-  .header-main {
-    background-color: $main-color !important;
-    width: 100%;
-    height: 200px;
-
-    .banner {
-      .title {
-        color: $white-color !important;
-
-        margin-top: 90px;
-      }
-    }
-  }
-}
-
-.student-info {
-  border: 3px solid $main-color;
-  padding: 100px;
-  .student-title {
-    text-align: center;
-    h2 {
-      color: $black-color;
-    }
-    h3 {
-      color: red;
-    }
-  }
-}
-
-.tips {
-  background-color: $white-color;
-  padding: 100px;
-  text-align: center;
-}
 /// end
 .social-about {
   margin-left: 20%;
@@ -378,19 +328,28 @@ header {
       font-weight: bold;
       color: $white-color;
       margin: 50px auto 30px;
+     &:hover {
+        animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+        transform: translate3d(0, 0, 0);
+        perspective: 1000px;
+      }
     }
 
-    .counter {
+    .counter-name {
       color: $gray_color;
       font-size: 20px;
       font-weight: bold;
+    
     }
 
     img {
       width: 200px;
+      margin-top: 20px;
     }
   }
 }
+
+
 
 // conntact section
 
@@ -440,6 +399,7 @@ footer {
     font-size: 30px;
     a {
       color: darken($color: $gray_color, $amount: 50%);
+      display: inline-block;
     }
   }
 }
@@ -470,7 +430,26 @@ footer {
   }
 }
 
+@media (min-width: 750px) and (max-width: 1000px) {
+  .button-register {
+    position: absolute;
+  }
+  .register .button-register a {
+    position: relative;
+    top: 83px;
+    left: -96px;
+  }
+}
 
+@media (max-width: 750px) {
+  footer {
+    .col-md-3 {
+      h3 {
+        margin-top: 30px;
+      }
+    }
+  }
+}
 
 @media (max-width: 600px) {
   .main-breadcrumb {
@@ -478,3 +457,35 @@ footer {
     margin-right: 50px !important;
   }
 }
+
+// @media (max-width: 575px) {
+//   footer {
+//     .col-md-3 {
+//       h3 {
+//         margin-top: 30px;
+//       }
+//     }
+//   }
+//   }
+
+
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  
+  30%, 50%, 70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(2px, 0, 0);
+}
+}
+
+
+
+

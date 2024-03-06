@@ -4,11 +4,8 @@ require('bootstrap/dist/js/bootstrap.bundle');
 import { CountUp } from 'countup.js';
 
 import "@fortawesome/fontawesome-free/js/all.min";
-
 import '../sass/style.scss'
-
 import '../sass/register.scss'
-
 import '../sass/login.scss'
 import '../sass/student.scss'
 
@@ -23,6 +20,23 @@ function scrollFnuction() {
         document.getElementById('navbar').classList.remove('noTransparrent');
     }
 };
+
+
+var btn = $('#button');
+
+$(window).scroll(function () {
+    if ($(window).scrollTop() > 300) {
+        btn.addClass('show');
+    } else {
+        btn.removeClass('show');
+    }
+});
+
+btn.on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: 0 }, '300');
+});
+
 
 // scrollFnuction();
 
@@ -62,3 +76,6 @@ if (!countUp2.error) {
 } else {
     console.error(countUp2.error);
 }
+
+
+document.getElementById("year").innerHTML = "جميع الحقوق محفوظة  سنة " + new Date().getFullYear();

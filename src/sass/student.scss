@@ -1,14 +1,82 @@
 @import "./variables";
 @import "./mixins.scss";
 
+.main-breadcrumb {
+  margin-left: 300px;
+  .breadcrumb {
+    a {
+      text-decoration: none;
+      color: $black-color;
+
+      &:hover {
+        color: $main-color;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+header {
+  .header-main {
+    background-color: $main-color !important;
+    width: 100%;
+    height: 200px;
+
+    .banner {
+      .title {
+        color: $white-color !important;
+
+        margin-top: 90px;
+      }
+    }
+  }
+}
+
+.student-info {
+  border: 3px solid $main-color;
+  padding: 100px;
+  .student-title {
+    text-align: center;
+    h2 {
+      color: $black-color;
+    }
+    h3 {
+      color: red;
+    }
+  }
+}
+
+.tips {
+  background-color: $white-color;
+  padding: 100px;
+  text-align: center;
+}
+
+.studnet-mark {
+  th {
+    text-align: center;
+
+  }
+  td {
+    padding: 40px;
+    text-align: center;
+  }
+}
 
 @media (max-width: 1000px) {
-  footer {
-    .studnet-mark {
-      table > td {
-        width: 200px !important;
-        height: 200px !important;
-      }
+  .studnet-mark {
+    table {
+      width: 100%;
+      height: 100%;
+    }
+
+    td {
+      padding: 40px;
+      text-align: center;
+    }
+    th {
+      padding: 20px;
+      text-align: center;
     }
   }
 }
