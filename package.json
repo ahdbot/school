@@ -21,6 +21,7 @@
     "bootstrap": "^5.3.3",
     "countup.js": "^2.8.0",
     "save-dev": "^0.0.1-security",
+    "swiper": "^11.0.7",
     "webpack": "^5.75.0"
   },
   "devDependencies": {

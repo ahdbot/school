@@ -2,24 +2,82 @@
 import 'bootstrap/dist/css/bootstrap.rtl.css';
 require('bootstrap/dist/js/bootstrap.bundle');
 import { CountUp } from 'countup.js';
-
 import "@fortawesome/fontawesome-free/js/all.min";
 import '../sass/style.scss'
 import '../sass/register.scss'
 import '../sass/login.scss'
 import '../sass/student.scss'
-
 // import "jquery/dist/jquery.js";
 
 
+import Swiper from 'swiper/bundle';
 
-function scrollFnuction() {
-    if (document.documentElement.scrollTop > 200) {
-        document.getElementById('navbar').classList.add('noTransparrent');
-    } else {
-        document.getElementById('navbar').classList.remove('noTransparrent');
-    }
-};
+import 'swiper/css/bundle';
+
+
+
+const changeSlideView = (slide) => {
+    const swiper = new Swiper(".mySwiper", {
+        slidesPerView: slide,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 50,
+            },
+        }
+    });
+}
+
+changeSlideView();
+// const mql = window.matchMedia("(max-width: 992px)");
+
+
+// const handleOrientationChange = (e) => {
+//     if (mql.matches) {
+//         changeSlideView(2);
+//     } else {
+//         changeSlideView(3);
+//     }
+
+
+   
+
+// }
+
+
+
+// handleOrientationChange();
+
+// mql.onchange = (e) => {
+//     handleOrientationChange(e);
+// }
+
+
+// function scrollFnuction() {
+//     if (document.documentElement.scrollTop > 200) {
+//         document.getElementById('navbar').classList.add('noTransparrent');
+//     } else {
+//         document.getElementById('navbar').classList.remove('noTransparrent');
+//     }
+// };
 
 
 var btn = $('#button');
