@@ -24,7 +24,6 @@
 }
 
 
-@mixin colors($text) {
-  color: $text;
-
+@mixin colors($color) {
+  color: $color;
 }
