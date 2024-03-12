@@ -11,3 +11,20 @@
     color: $background-color;
   }
 }
+
+
+// student mxixns
+
+@mixin beautiful-border($color, $width) {
+  border: {
+    color: $color;
+    width: $width;
+    style: solid;
+  }
+}
+
+
+@mixin colors($text) {
+  color: $text;
+
+}

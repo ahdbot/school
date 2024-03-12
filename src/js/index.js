@@ -99,4 +99,4 @@ window.onload = function () {
     countUp2.start();
 }
 
-document.getElementById("year").innerHTML = "جميع الحقوق محفوظة  سنة " + new Date().getFullYear();
+document.getElementById("year").innerHTML = "جميع الحقوق محفوظة   " + new Date().getFullYear();

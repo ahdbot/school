@@ -436,7 +436,7 @@ footer {
     .map {
       iframe {
         width: 200px;
-        height: 200px;
+        height: 100%;
       }
     }
   }
@@ -501,7 +501,7 @@ footer {
     .map {
       iframe {
         height: fit-content;
-        width: 90%;
+        width: 100%;
 
         text-align: center;
       }
@@ -533,12 +533,13 @@ footer {
   }
 }
 .about-the-school .description q {
-  font-size: 20px;
+  font-size: 24px;
   text-align: center;
   color: #b1aeae;
   padding: 50px;
-  line-height: 10px;
+  line-height: 50px;
 }
+
 .students {
   .slide-text {
     h4 {

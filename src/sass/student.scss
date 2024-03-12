@@ -33,15 +33,16 @@ header {
 }
 
 .student-info {
-  border: 3px solid $main-color;
+  @include beautiful-border(green, 3px);
+
   padding: 100px;
   .student-title {
     text-align: center;
     h2 {
-      color: $black-color;
+      @include colors($black-color);
     }
     h3 {
-      color: red;
+      @include colors(red);
     }
   }
 }
@@ -85,7 +86,6 @@ header {
     table {
       width: 50%;
       height: 50%;
-      
     }
 
     td {
