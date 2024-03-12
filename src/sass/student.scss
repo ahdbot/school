@@ -55,7 +55,6 @@ header {
 .studnet-mark {
   th {
     text-align: center;
-
   }
   td {
     padding: 40px;
@@ -72,6 +71,25 @@ header {
 
     td {
       padding: 40px;
+      text-align: center;
+    }
+    th {
+      padding: 20px;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .studnet-mark {
+    table {
+      width: 50%;
+      height: 50%;
+      
+    }
+
+    td {
+      padding: 10px;
       text-align: center;
     }
     th {

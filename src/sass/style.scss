@@ -20,12 +20,12 @@ header {
   .navbar {
     .navbar-nav {
       .nav-item {
+        padding: 11px;
+
         .active {
           color: $main-color !important;
           border-bottom: 1px solid $main-color;
         }
-        padding: 10px auto;
-        margin: 10px auto;
       }
     }
 
@@ -38,8 +38,8 @@ header {
 
     .nav-link {
       color: $black-color;
-      font-size: 25px;
-      margin-right: 20px;
+      font-size: 22px;
+
       transition: all 0.5s ease;
 
       &:hover {
@@ -114,7 +114,7 @@ header {
           padding: 17px 47px;
           border-radius: 30px;
         }
-        h2 {
+        h5 {
           margin-bottom: 50px !important;
           color: $white-color;
         }
@@ -180,29 +180,6 @@ header {
   h2 {
     color: $white-color;
   }
-  .carousel-inner {
-    .custom-img {
-      width: 200px;
-      height: 150px;
-    }
-
-    .student-name {
-      font-size: 24px;
-      margin-top: 15px;
-      color: $black-color;
-      &:hover {
-        color: $main-color;
-      }
-    }
-
-    .student-date {
-      color: $gray_color !important;
-      time {
-        font-size: 15px;
-      }
-      margin-bottom: 15px;
-    }
-  }
 
   .swiper {
     width: 100%;
@@ -227,13 +204,14 @@ header {
       .student-name {
         text-decoration: none !important;
         color: $gray_color;
-        font-size: 10px !important;
+
         margin-bottom: 20px;
       }
-      .student-age {
+      .studnet-age {
         text-decoration: none !important;
         color: $black-color;
-        font-size: 5px !important;
+
+        margin-bottom: 20px;
       }
     }
   }
@@ -241,22 +219,29 @@ header {
   .swiper {
     margin-left: auto;
     margin-right: auto;
-    padding: 0px 0 70px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
   }
 
   .swiper-button-next {
-    color: #fff;
+    color: $white-color;
+    top: 120px;
   }
 
   .swiper-button-prev {
-    color: #fff;
+    color: $white-color;
+    top: 120px;
   }
   .swiper-pagination {
+    position: absolute;
     &-bullet {
       background-color: $gray_color !important;
       width: 20px;
       height: 20px;
       margin: 10px;
+      bottom: 10px;
+      position: relative;
     }
   }
 }
@@ -275,16 +260,6 @@ header {
   }
   .card {
     text-align: center !important;
-  }
-}
-@media (max-width: 1670px) {
-  .carousel-content {
-    h2 {
-      font-size: 1.5rem;
-    }
-    h1 {
-      font-size: 1.9rem;
-    }
   }
 }
 
@@ -447,6 +422,24 @@ footer {
       display: inline-block;
     }
   }
+
+  .map {
+    iframe {
+      width: 300px;
+      height: 200px;
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  footer {
+    .map {
+      iframe {
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
 }
 
 // register form
@@ -469,11 +462,11 @@ footer {
 //   }
 // }
 
-@media (max-width: 1600px) {
-  .main-breadcrumb {
-    margin-right: 100px;
-  }
-}
+// @media (max-width: 1600px) {
+//   .main-breadcrumb {
+//     margin-right: 100px;
+//   }
+// }
 
 @media (min-width: 750px) and (max-width: 1000px) {
   .button-register {
@@ -487,13 +480,6 @@ footer {
 }
 
 @media (max-width: 750px) {
-  .carousel-control-prev {
-    display: none;
-  }
-
-  .carousel-control-next {
-    display: none;
-  }
   footer {
     .col-md-3 {
       h3 {
@@ -510,15 +496,81 @@ footer {
   }
 }
 
-// @media (max-width: 575px) {
-//   footer {
-//     .col-md-3 {
-//       h3 {
-//         margin-top: 30px;
-//       }
-//     }
-//   }
-//   }
+@media (max-width: 990px) {
+  footer {
+    .map {
+      iframe {
+        height: fit-content;
+        width: 90%;
+
+        text-align: center;
+      }
+    }
+  }
+
+  .students {
+    .swiper-button-prev {
+      margin-right: 20px;
+    }
+    .swiper-button-next {
+      transform: translateX(-70px, -50px);
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .students {
+    .swiper-button-prev {
+      transform: translateY(-70px, -50px);
+    }
+    .swiper-button-next {
+      transform: translateY(-70px, -50px);
+    }
+
+    .swiper-pagination {
+      display: none;
+    }
+  }
+}
+.about-the-school .description q {
+  font-size: 20px;
+  text-align: center;
+  color: #b1aeae;
+  padding: 50px;
+  line-height: 10px;
+}
+.students {
+  .slide-text {
+    h4 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+  .swiper-slide {
+    img {
+      height: 200px;
+      width: 200px;
+      object-fit: cover;
+    }
+  }
+  .swiper-button-next {
+    color: $white-color;
+    margin-left: 25px;
+  }
+
+  .swiper-button-prev {
+    color: $white-color;
+    margin-right: 25px;
+  }
+
+  .swiper-pagination {
+    &-bullet {
+      // display: none;
+    }
+  }
+}
 
 @keyframes shake {
   10%,
